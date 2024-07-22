@@ -16,7 +16,7 @@ function transformCode(filePath, faust_libraries) : string {
             return match;
         }
 
-        return `${p1}("pkg:faust/faust/${p2}@${libVersion}")`;
+        return `${p1}("pkg:faust/faust/${p2}@${libVersion}");`;
     });
 
     return replacedCode;

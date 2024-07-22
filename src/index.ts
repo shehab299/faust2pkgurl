@@ -76,6 +76,8 @@ class faust2pkgUrl extends Command {
     if(libraries)
         faust_libraries = this.readLibraries(libraries);
 
+    console.log(faust_libraries)
+
     let new_code = "";
 
     try{
