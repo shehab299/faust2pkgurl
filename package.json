@@ -1,0 +1,32 @@
+{
+  "name": "faust2pkgurl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type" : "module",
+  "scripts": {
+    "dev": "tsc && node ./bin/run.js",
+    "dev-win": "tsc && ./bin/run.cmd"
+  },
+  "author": "shehab khaled",
+  "license": "MIT",
+  "description": "",
+  "bin": {
+    "faust2pkgurl": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "faust2pkgurl",
+    "commands": {
+      "strategy" : "single",
+      "target" : "./dist/index.js"
+    },
+    "dirname": "faust2pkgurl",
+    "topicSeparator": ":"
+  },
+  "dependencies": {
+    "@oclif/core": "^4.0.13"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.41",
+    "ts-node": "^10.9.2"
+  }
+}
