@@ -1,8 +1,8 @@
 {
   "name": "faust2pkgurl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
-  "type" : "module",
+  "type": "module",
   "scripts": {
     "dev": "tsc && node ./bin/run.js",
     "dev-win": "tsc && ./bin/run.cmd"
@@ -16,8 +16,8 @@
   "oclif": {
     "bin": "faust2pkgurl",
     "commands": {
-      "strategy" : "single",
-      "target" : "./dist/index.js"
+      "strategy": "single",
+      "target": "./dist/index.js"
     },
     "dirname": "faust2pkgurl",
     "topicSeparator": ":"
