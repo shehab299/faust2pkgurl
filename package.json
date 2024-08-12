@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "tsc && node ./bin/run.js",
-    "dev-win": "tsc && ./bin/run.cmd"
+    "dev": "npx tsc && node ./bin/run.js",
+    "dev-win": "npx tsc && ./bin/run.cmd"
   },
   "author": "shehab khaled",
   "license": "MIT",
@@ -23,7 +23,8 @@
     "topicSeparator": ":"
   },
   "dependencies": {
-    "@oclif/core": "^4.0.13"
+    "@oclif/core": "^4.0.13",
+    "typescript": "^5.5.4"
   },
   "devDependencies": {
     "@types/node": "^18.19.41",
