@@ -10,13 +10,19 @@ function transformCode(filePath, faust_libraries) : string {
         
         p2 = p2.trim();
 
-        let libVersion = faust_libraries[p2];
-
-        if(!libVersion){
+        if(!faust_libraries[p2]){
             return match;
         }
 
-        return `${p1}("pkg:faust/faust/${p2}@${libVersion}");`;
+        let author: string = faust_libraries[p1][0];
+        let libVersion: string = faust_libraries[p2][1];
+
+
+        if(!libVersion || !author){
+            return match;
+        }
+
+        return `${p1}("pkg:faust/${author}/${p2}@${libVersion}");`;
     });
 
     return replacedCode;
