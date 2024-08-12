@@ -6,7 +6,19 @@ the versions you want it to use
 
 ## Installation
 
-npm i -g faust2pkgurl
+
+make sure you have
+
+```
+1- npm
+2- node 
+
+```
+
+```
+npm i -g faust2pkgurl // to download faust2pkgurl globally
+```
+
 
 ### USAGE
 
