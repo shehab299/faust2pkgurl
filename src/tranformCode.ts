@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from 'node:fs';
 
 
 function transformCode(filePath, faust_libraries) : string {
@@ -14,7 +14,7 @@ function transformCode(filePath, faust_libraries) : string {
             return match;
         }
 
-        let author: string = faust_libraries[p1][0];
+        let author: string = faust_libraries[p2][0];
         let libVersion: string = faust_libraries[p2][1];
 
 

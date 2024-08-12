@@ -1,6 +1,6 @@
 import { Command, Args, Flags, Errors } from "@oclif/core";
 import transformCode from "./tranformCode.js";
-import fs from 'fs';
+import fs from 'node:fs';
 
 class faust2pkgUrl extends Command {
 
@@ -75,8 +75,6 @@ class faust2pkgUrl extends Command {
 
     if(libraries)
         faust_libraries = this.readLibraries(libraries);
-
-    console.log(faust_libraries)
 
     let new_code = "";
 

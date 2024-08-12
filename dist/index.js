@@ -1,6 +1,6 @@
 import { Command, Args, Flags, Errors } from "@oclif/core";
 import transformCode from "./tranformCode.js";
-import fs from 'fs';
+import fs from 'node:fs';
 class faust2pkgUrl extends Command {
     static description = "It converts a Faust program into using new pkgUrl format.";
     static examples = [
@@ -59,7 +59,6 @@ class faust2pkgUrl extends Command {
         let faust_libraries = {};
         if (libraries)
             faust_libraries = this.readLibraries(libraries);
-        console.log(faust_libraries);
         let new_code = "";
         try {
             new_code = transformCode(file, faust_libraries);
