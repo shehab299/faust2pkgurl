@@ -1,7 +1,7 @@
 {
     "aanl.lib": ["faust", "1.3.0"],
     "analyzers.lib": ["faust", "1.2.0"],
-    "basics.lib": ["faust", "1.18.0"],
+    "basics.lib": ["faust", "1.19.1"],
     "delays.lib": ["faust", "1.1.0"],
     "demos.lib": ["faust", "1.2.0"],
     "dx7.lib": ["faust", "1.1.0"],
@@ -24,7 +24,7 @@
     "reverbs.lib": ["faust", "1.3.0"],
     "routes.lib": ["faust", "1.2.0"],
     "sf.lib": ["faust", "1.0.0"],
-    "signals.lib": ["faust", "1.5.0"],
+    "signals.lib": ["faust", "1.6.0"],
     "soundfiles.lib": ["faust", "1.7.0"],
     "spats.lib": ["faust", "1.1.0"],
     "stdfaust.lib": ["faust", "1.0.0"],
